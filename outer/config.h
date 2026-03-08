@@ -15,11 +15,11 @@
 #define MATRIX_DEVICES   4    // Panels per chain
 
 // ----------------------------------------------------------
-// DFPlayer Mini (via SoftwareSerial)
+// DFPlayer Mini (via HardwareSerial 1)
 // ----------------------------------------------------------
-#define DFPLAYER_RX_PIN  16   // ESP32 RX ← DFPlayer TX
-#define DFPLAYER_TX_PIN  17   // ESP32 TX → DFPlayer RX
-#define DFPLAYER_VOLUME  25   // 0–30
+#define DFPLAYER_RX_PIN   16   // Connect to DFPlayer TX
+#define DFPLAYER_TX_PIN   17   // Connect to DFPlayer RX (use 1k resistor)
+#define DFPLAYER_VOLUME   25   // 0–30
 
 // ----------------------------------------------------------
 // Thermal Printer (via SoftwareSerial / HardwareSerial2)

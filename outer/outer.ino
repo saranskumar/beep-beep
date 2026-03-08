@@ -1,4 +1,4 @@
-// ============================================================
+dev// ============================================================
 //  OUTER UNIT — MAIN SKETCH
 //  Public-facing ESP32: token display, audio, printer, button.
 //
@@ -92,5 +92,6 @@ void setup() {
 void loop() {
   button_update();    // Poll button → fires onTokenRequest if pressed
   comm_update();      // Parse UART input → fires onTokenCalled / onReset
+  audio_update();     // Process the non-blocking playback queue
   display_update();   // Drive MD_Parola animation engine
 }
